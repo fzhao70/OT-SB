@@ -11,6 +11,20 @@ A comprehensive Python library for Optimal Transport (OT) and Schrödinger Bridg
 - **Visualization Tools**: Built-in plotting for transport plans and trajectories
 - **Well-tested**: Comprehensive test suite ensuring reliability
 
+## Try It Without Installation!
+
+Want to try OT-SB immediately? All examples work directly after cloning - **no pip install needed**!
+
+```bash
+git clone https://github.com/fzhao70/OT-SB.git
+cd OT-SB
+pip install numpy scipy matplotlib  # Install dependencies only
+python examples/simple_1d_ot.py      # Run examples directly!
+python examples/comparison_methods.py
+```
+
+See [examples/README.md](examples/README.md) for more details.
+
 ## Installation
 
 ### From source
@@ -185,17 +199,32 @@ from otsb.utils import (
 
 ## Examples
 
-See the `examples/` directory for complete examples:
+The library includes 6 comprehensive examples that **run without installation**:
 
-- `example_sinkhorn.py`: Entropic OT with Sinkhorn
+**Basic Examples:**
+- `example_sinkhorn.py`: Entropic OT with Sinkhorn algorithm
 - `example_exact_ot.py`: Exact OT and Wasserstein distance
 - `example_schrodinger_bridge.py`: Schrödinger Bridge trajectories
 
-Run an example:
+**Advanced Examples:**
+- `simple_1d_ot.py`: 1D transport with method comparison
+- `comparison_methods.py`: Detailed algorithm comparison and analysis
+- `gaussian_mixture_transport.py`: Complex multi-modal distributions
+
+Run any example directly after cloning:
 
 ```bash
-python examples/example_sinkhorn.py
+python examples/simple_1d_ot.py
+python examples/comparison_methods.py
 ```
+
+Or run all examples at once:
+
+```bash
+python examples/run_all_examples.py
+```
+
+See [examples/README.md](examples/README.md) for detailed documentation.
 
 ## Mathematical Background
 
