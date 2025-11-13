@@ -1,6 +1,12 @@
 """
 Example: Using Schrödinger Bridge solver.
+This example can run directly after cloning without installation.
 """
+
+import sys
+import os
+# Add parent directory to path to import otsb without installation
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 import numpy as np
 import matplotlib.pyplot as plt
