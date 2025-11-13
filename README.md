@@ -10,6 +10,7 @@ A comprehensive Python library for Optimal Transport (OT) and Schrödinger Bridg
 - **Flexible Cost Functions**: Multiple distance metrics (Euclidean, Manhattan, Cosine, etc.)
 - **Visualization Tools**: Built-in plotting for transport plans and trajectories
 - **Well-tested**: Comprehensive test suite ensuring reliability
+- **🔥 GPU Support**: PyTorch implementation with CUDA acceleration (see `otsb_torch/`)
 
 ## Try It Without Installation!
 
@@ -42,6 +43,22 @@ For development with additional dependencies:
 ```bash
 pip install -e ".[dev]"
 ```
+
+### PyTorch / GPU version
+
+For GPU-accelerated optimal transport:
+
+```bash
+# Install with PyTorch support
+pip install -e ".[torch]"
+
+# Or install PyTorch separately for specific CUDA version
+# See https://pytorch.org for installation instructions
+pip install torch
+pip install -e .
+```
+
+See `examples_torch/` and `otsb_torch/` for PyTorch implementation.
 
 ## Quick Start
 
