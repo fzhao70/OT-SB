@@ -15,8 +15,21 @@ GPU-accelerated examples using the PyTorch implementation of OT-SB.
 pip install torch numpy scipy matplotlib
 ```
 
-Or install PyTorch from the official website for CUDA support:
+**PyTorch Version:** Requires PyTorch >= 1.10.0
+
+For CUDA support, install PyTorch from the official website:
 https://pytorch.org/get-started/locally/
+
+**Verify Installation:**
+```bash
+python examples_torch/test_torch_installation.py
+```
+
+This will check:
+- PyTorch is installed correctly
+- CUDA is available (if you have a GPU)
+- otsb_torch imports work
+- Basic Sinkhorn and Schrödinger Bridge functionality
 
 ## Running Examples WITHOUT Installation
 
