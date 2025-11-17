@@ -1,0 +1,13 @@
+# PyTorch version requirements
+# Install with: pip install -r requirements_torch.txt
+
+# Core dependencies
+numpy>=1.20.0
+scipy>=1.7.0
+matplotlib>=3.3.0
+
+# PyTorch (install from https://pytorch.org for CUDA support)
+torch>=1.10.0
+
+# Optional: Python Optimal Transport library for better exact OT support
+# POT>=0.8.0
